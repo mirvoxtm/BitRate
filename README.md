@@ -1,2 +1,2 @@
-# BitRate
- Front-End Demonstration of a Video Platform
+# 🔶 BitRate 
+ Front-End Demonstration of a Alternate Video Platform.
