@@ -11,3 +11,4 @@ This demo was made with TailwindCSS! It also may not be completely <b>responsive
 - [ ] Finish the main page.
 - [ ] Add video pages.
 - [ ] Add channel pages.
+- [-] Make it 100% responsive.
