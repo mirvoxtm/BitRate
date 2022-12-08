@@ -1,0 +1,101 @@
+* {
+    scrollbar-width: 5px;
+    scrollbar-color: #ababab #ffffff;
+  }
+
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+	background: linear-gradient(-45deg, #0f0f0f, #100f0f, #0f0f0f, #050404);
+    animation: gradient 15s ease infinite;
+
+}
+
+*::-webkit-scrollbar-thumb {
+    position: absolute;
+    background-color: #333333;
+    border-radius: 10px;
+    border: 2px solid #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: linear-gradient(-45deg, #151515, #111111);
+	background-size: 400% 400%;
+	animation: gradient 80s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;}
+	50% {
+		background-position: 100% 50%;}
+	100% {
+		background-position: 0% 50%;}
+}
+
+input[type=search] {
+    box-sizing: border-box;
+    border: none;
+    background-color: none;
+    background-image: url('res/img/search.png') 20px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+#searchnav {
+    transition: box-shadow 1s ease-out;
+}
+
+#searchnav:hover {
+    animation: neon 1s ease forwards;
+}
+
+@keyframes neon {
+	0% {
+        box-shadow: 
+    0 0 3px rgb(255, 175, 2, 0.0),
+    0 0 4px rgb(125, 81, 15, 0.0),
+    0 0 2px rgb(189, 65, 3, 0.0),
+    0 0 1px rgb(222, 153, 2, 0.0),
+    0 0 2px rgb(255, 166, 0, 0.0),
+    0 0 1px rgb(255, 132, 0, 0.0),
+    0 0 2px rgb(255, 132, 0, 0.0),
+    0 0 1px #0fa;
+}
+	
+	100% {
+        box-shadow: 
+        0 0 3px rgb(255, 175, 2, 0.4),
+        0 0 4px rgb(125, 81, 15, 0.4),
+        0 0 2px rgb(189, 65, 3, 0.4),
+        0 0 1px rgb(222, 153, 2, 0.4),
+        0 0 2px rgb(255, 166, 0, 0.4),
+        0 0 1px rgb(255, 132, 0, 0.4),
+        0 0 2px rgb(255, 132, 0, 0.4),
+        0 0 1px #0fa;}
+}
+
+#tags::-webkit-scrollbar {
+    scrollbar-width: 0;
+    border-color: transparent;
+    background: transparent;
+}
+
+#tags::-webkit-scrollbar-track {
+	background: transparent;
+
+}
+
+#tags::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 1px solid transparent;
+    animation: gradient 80s ease infinite;
+}
